@@ -13,15 +13,16 @@
 <meta property="og:title" content="Digitale Souveränität unter der Bundeshauskuppel">
 <meta property="og:description" content="7 von 7 Parteien mailen mit Microsoft 365. Rangliste, Factsheet und Rohdaten.">
 <meta property="og:url" content="https://nordmann.github.io/swiss-sovereignty/">
-<meta property="og:image" content="https://nordmann.github.io/swiss-sovereignty/chart.png">
+<meta property="og:image" content="https://nordmann.github.io/swiss-sovereignty/og-image.png">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1350">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Rangliste der sieben grössten Schweizer Parteien nach Anteil US-Dienste bei Website, DNS und E-Mail. 7 von 7 mailen mit Microsoft 365.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@300;600;700&display=swap">
+<meta name="twitter:image" content="https://nordmann.github.io/swiss-sovereignty/og-image.png">
+<meta name="twitter:image:alt" content="Rangliste der sieben grössten Schweizer Parteien nach Anteil US-Dienste bei Website, DNS und E-Mail. 7 von 7 mailen mit Microsoft 365.">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%23ec5448'/%3E%3C/svg%3E">
 <script type="application/ld+json">
 {
@@ -33,7 +34,7 @@
   "datePublished": "2026-10-09",
   "dateModified": "2026-10-09",
   "author": {"@type": "Person", "name": "Denis Nordmann", "url": "https://nordmann.ch"},
-  "image": "https://nordmann.github.io/swiss-sovereignty/chart.png",
+  "image": ["https://nordmann.github.io/swiss-sovereignty/og-image.png", "https://nordmann.github.io/swiss-sovereignty/chart.png"],
   "url": "https://nordmann.github.io/swiss-sovereignty/",
   "mainEntityOfPage": "https://nordmann.github.io/swiss-sovereignty/",
   "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -42,9 +43,12 @@
 }
 </script>
 <style>
+/* Self-hosted fonts (SIL OFL 1.1, see fonts/OFL-*.txt) so no visitor data goes to third parties */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/inter-latin.woff2) format("woff2")}
+@font-face{font-family:"Inter Tight";font-style:normal;font-weight:300 700;font-display:swap;src:url(fonts/inter-tight-latin.woff2) format("woff2")}
 /* Layout: one narrow column; hero figure, three KPI cards, ranking card, download card */
 :root{
-  --bg:#f3f3f1; --card:#ffffff; --line:#e9e9ec; --fg:#16181e; --soft:#585c66; --muted:#8e929b; --chip:#f4f4f3;
+  --bg:#f3f3f1; --card:#ffffff; --line:#e9e9ec; --fg:#16181e; --soft:#585c66; --muted:#6b6f78; --chip:#f4f4f3;
   --ch:#22a86e; --eu:#627cf0; --us:#ec5448; --ot:#bec1ca;
   --display:"Inter Tight","Inter",system-ui,-apple-system,sans-serif;
   --body:"Inter",system-ui,-apple-system,sans-serif;
@@ -125,8 +129,8 @@ footer a{color:inherit}
 </head>
 <body>
 <main class="wrap">
-  <div class="top"><span class="pill"><i></i>Fact Sheet</span><span class="date">Stand 9. Oktober 2026</span></div>
-  <h1>Digitale Souveränität<span>unter der Bundeshauskuppel</span></h1>
+  <div class="top"><span class="pill"><i></i>Fact Sheet</span><span class="date">Stand <time datetime="2026-10-09">9. Oktober 2026</time></span></div>
+  <h1>Digitale Souveränität <span>unter der Bundeshauskuppel</span></h1>
 
   <div class="hero">
     <div class="n">7/7</div>
@@ -174,7 +178,7 @@ footer a{color:inherit}
 
   <footer>
     <span>Autor: <a href="https://nordmann.ch" rel="author"><b>Denis Nordmann</b></a> · Inspiriert von <a href="https://lnkd.in/p/eijzZHNK">Max Heyer</a></span>
-    <a class="cc" href="https://creativecommons.org/licenses/by/4.0/legalcode.de" rel="license"><b>cc</b><b>by</b>BY 4.0</a>
+    <a class="cc" href="https://creativecommons.org/licenses/by/4.0/legalcode.de" rel="license" aria-label="Lizenz: CC BY 4.0"><b>cc</b><b>by</b>BY 4.0</a>
   </footer>
 </main>
 
