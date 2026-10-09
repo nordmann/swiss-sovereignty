@@ -1,21 +1,46 @@
 <!doctype html>
-<html lang="de">
+<html lang="de-CH">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Digitale Souveränität unter der Bundeshauskuppel</title>
+<title>Digitale Souveränität der Schweizer Parteien – Factsheet 2026</title>
+<link rel="canonical" href="https://nordmann.github.io/swiss-sovereignty/">
 <meta name="description" content="Wo laufen Website, DNS und E-Mail der Schweizer Parlamentsparteien? Technische Auswertung nach Sitz des Betreibers: Schweiz, EU/EFTA, USA.">
 <meta name="author" content="Denis Nordmann">
 <meta property="og:type" content="article">
+<meta property="og:locale" content="de_CH">
+<meta property="og:site_name" content="Digitale Souveränität unter der Bundeshauskuppel">
 <meta property="og:title" content="Digitale Souveränität unter der Bundeshauskuppel">
 <meta property="og:description" content="7 von 7 Parteien mailen mit Microsoft 365. Rangliste, Factsheet und Rohdaten.">
 <meta property="og:url" content="https://nordmann.github.io/swiss-sovereignty/">
 <meta property="og:image" content="https://nordmann.github.io/swiss-sovereignty/chart.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:alt" content="Rangliste der sieben grössten Schweizer Parteien nach Anteil US-Dienste bei Website, DNS und E-Mail. 7 von 7 mailen mit Microsoft 365.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@300;600;700&display=swap">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%23ec5448'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Digitale Souveränität unter der Bundeshauskuppel",
+  "description": "Wo laufen Website, DNS und E-Mail der Schweizer Parlamentsparteien? Technische Auswertung nach Sitz des Betreibers: Schweiz, EU/EFTA, USA.",
+  "inLanguage": "de-CH",
+  "datePublished": "2026-10-09",
+  "dateModified": "2026-10-09",
+  "author": {"@type": "Person", "name": "Denis Nordmann", "url": "https://nordmann.ch"},
+  "image": "https://nordmann.github.io/swiss-sovereignty/chart.png",
+  "url": "https://nordmann.github.io/swiss-sovereignty/",
+  "mainEntityOfPage": "https://nordmann.github.io/swiss-sovereignty/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "about": ["Digitale Souveränität", "Schweizer Parteien", "Microsoft 365", "Cloudflare", "DNS", "E-Mail"],
+  "associatedMedia": {"@type": "MediaObject", "name": "Factsheet Digitale Souveränität (PDF)", "encodingFormat": "application/pdf", "contentUrl": "https://nordmann.github.io/swiss-sovereignty/factsheet-digitale-souveraenitaet.pdf"}
+}
+</script>
 <style>
 /* Layout: one narrow column; hero figure, three KPI cards, ranking card, download card */
 :root{
@@ -117,7 +142,15 @@ footer a{color:inherit}
 
   <section class="card rank" aria-label="Rangliste nach Anteil US-Dienste">
     <div class="legend"><div class="k"><span><i class="c-CH"></i>Schweiz</span><span><i class="c-EU"></i>EU / EFTA</span><span><i class="c-US"></i>USA</span><span><i class="c-OT"></i>Andere</span></div><span>Rangliste nach Anteil USA</span></div>
-    <div id="rows"></div>
+    <div id="rows">
+    <div class="row"><div class="rk">1</div><div class="pn">EVP</div><div class="bar" role="img" aria-label="EVP: 3 Schweiz, 4 EU/EFTA, 1 USA von 8 Diensten"><i class="c-CH" style="flex:3;animation-delay:0ms"></i><i class="c-EU" style="flex:4;animation-delay:0ms"></i><i class="c-US" style="flex:1;animation-delay:0ms"></i></div><div class="pct">13%</div><div class="chips"><span><i class="dot c-EU"></i>Hetzner</span><span><i class="dot c-CH"></i>Hostpoint</span><span><i class="dot c-US"></i>Microsoft 365</span></div></div>
+    <div class="row"><div class="rk">2</div><div class="pn">GLP</div><div class="bar" role="img" aria-label="GLP: 5 Schweiz, 3 USA von 8 Diensten"><i class="c-CH" style="flex:5;animation-delay:70ms"></i><i class="c-US" style="flex:3;animation-delay:70ms"></i></div><div class="pct">38%</div><div class="chips"><span><i class="dot c-CH"></i>Infomaniak</span><span><i class="dot c-CH"></i>Metanet</span><span><i class="dot c-CH"></i>MiroNet</span><span><i class="dot c-US"></i>Cloudflare DNS</span><span><i class="dot c-US"></i>Microsoft 365</span><span><i class="dot c-US"></i>Mailchimp</span></div></div>
+    <div class="row"><div class="rk">3</div><div class="pn">FDP</div><div class="bar" role="img" aria-label="FDP: 5 Schweiz, 1 EU/EFTA, 4 USA von 10 Diensten"><i class="c-CH" style="flex:5;animation-delay:140ms"></i><i class="c-EU" style="flex:1;animation-delay:140ms"></i><i class="c-US" style="flex:4;animation-delay:140ms"></i></div><div class="pct">40%</div><div class="chips"><span><i class="dot c-CH"></i>WNG</span><span><i class="dot c-CH"></i>Tocco</span><span><i class="dot c-CH"></i>Swisscom</span><span><i class="dot c-EU"></i>Host Europe</span><span><i class="dot c-US"></i>Microsoft 365</span><span><i class="dot c-US"></i>Amazon SES</span><span><i class="dot c-US"></i>Google</span></div></div>
+    <div class="row"><div class="rk">4</div><div class="pn">SVP</div><div class="bar" role="img" aria-label="SVP: 2 Schweiz, 9 USA, 1 andere von 12 Diensten"><i class="c-CH" style="flex:2;animation-delay:210ms"></i><i class="c-US" style="flex:9;animation-delay:210ms"></i><i class="c-OT" style="flex:1;animation-delay:210ms"></i></div><div class="pct hi">75%</div><div class="chips"><span><i class="dot c-CH"></i>Swisscom</span><span><i class="dot c-CH"></i>Tocco</span><span><i class="dot c-US"></i>Cloudflare</span><span><i class="dot c-US"></i>Microsoft 365</span><span><i class="dot c-US"></i>Mailchimp</span><span><i class="dot c-US"></i>Postmark</span><span><i class="dot c-US"></i>Google</span><span><i class="dot c-OT"></i>Trend Micro</span></div></div>
+    <div class="row"><div class="rk">4</div><div class="pn">SP</div><div class="bar" role="img" aria-label="SP: 1 Schweiz, 6 USA, 1 andere von 8 Diensten"><i class="c-CH" style="flex:1;animation-delay:280ms"></i><i class="c-US" style="flex:6;animation-delay:280ms"></i><i class="c-OT" style="flex:1;animation-delay:280ms"></i></div><div class="pct hi">75%</div><div class="chips"><span><i class="dot c-CH"></i>Zix</span><span><i class="dot c-US"></i>Cloudflare</span><span><i class="dot c-US"></i>Microsoft 365</span><span><i class="dot c-US"></i>Mailchimp</span><span><i class="dot c-OT"></i>SMTP2GO</span></div></div>
+    <div class="row"><div class="rk">6</div><div class="pn">Mitte</div><div class="bar" role="img" aria-label="Mitte: 2 Schweiz, 7 USA von 9 Diensten"><i class="c-CH" style="flex:2;animation-delay:350ms"></i><i class="c-US" style="flex:7;animation-delay:350ms"></i></div><div class="pct hi">78%</div><div class="chips"><span><i class="dot c-CH"></i>Hostpoint</span><span><i class="dot c-CH"></i>Swisscom</span><span><i class="dot c-US"></i>Cloudflare</span><span><i class="dot c-US"></i>Microsoft 365</span><span><i class="dot c-US"></i>Mailchimp</span></div></div>
+    <div class="row"><div class="rk">6</div><div class="pn">Grüne</div><div class="bar" role="img" aria-label="Grüne: 2 Schweiz, 7 USA von 9 Diensten"><i class="c-CH" style="flex:2;animation-delay:420ms"></i><i class="c-US" style="flex:7;animation-delay:420ms"></i></div><div class="pct hi">78%</div><div class="chips"><span><i class="dot c-CH"></i>cyon</span><span><i class="dot c-CH"></i>Webling</span><span><i class="dot c-US"></i>Cloudflare</span><span><i class="dot c-US"></i>Microsoft 365</span><span><i class="dot c-US"></i>Mailchimp</span></div></div>
+    </div>
   </section>
   <p class="note">Geprüft: Hosting, Server-Standort, DNS, Mail, Mailversand, CDN und eingebundene Dienste nach Sitz des Betreibers. Gleich hohe Anteile teilen sich den Rang.</p>
 
@@ -140,31 +173,10 @@ footer a{color:inherit}
   </div>
 
   <footer>
-    <span>Autor: <b>Denis Nordmann</b> · Inspiriert von <a href="https://lnkd.in/p/eijzZHNK">Max Heyer</a></span>
+    <span>Autor: <a href="https://nordmann.ch" rel="author"><b>Denis Nordmann</b></a> · Inspiriert von <a href="https://lnkd.in/p/eijzZHNK">Max Heyer</a></span>
     <a class="cc" href="https://creativecommons.org/licenses/by/4.0/legalcode.de" rel="license"><b>cc</b><b>by</b>BY 4.0</a>
   </footer>
 </main>
 
-<script>
-const D=[
- ["EVP",{CH:3,EU:4,US:1},[["EU","Hetzner"],["CH","Hostpoint"],["US","Microsoft 365"]]],
- ["GLP",{CH:5,US:3},[["CH","Infomaniak"],["CH","Metanet"],["CH","MiroNet"],["US","Cloudflare DNS"],["US","Microsoft 365"],["US","Mailchimp"]]],
- ["FDP",{CH:5,EU:1,US:4},[["CH","WNG"],["CH","Tocco"],["CH","Swisscom"],["EU","Host Europe"],["US","Microsoft 365"],["US","Amazon SES"],["US","Google"]]],
- ["SVP",{CH:2,US:9,OT:1},[["CH","Swisscom"],["CH","Tocco"],["US","Cloudflare"],["US","Microsoft 365"],["US","Mailchimp"],["US","Postmark"],["US","Google"],["OT","Trend Micro"]]],
- ["SP",{CH:1,US:6,OT:1},[["CH","Zix"],["US","Cloudflare"],["US","Microsoft 365"],["US","Mailchimp"],["OT","SMTP2GO"]]],
- ["Mitte",{CH:2,US:7},[["CH","Hostpoint"],["CH","Swisscom"],["US","Cloudflare"],["US","Microsoft 365"],["US","Mailchimp"]]],
- ["Grüne",{CH:2,US:7},[["CH","cyon"],["CH","Webling"],["US","Cloudflare"],["US","Microsoft 365"],["US","Mailchimp"]]]];
-const L={CH:"Schweiz",EU:"EU/EFTA",US:"USA",OT:"andere"};
-let prev=null,rank=0;
-document.getElementById("rows").innerHTML=D.map(([p,n,c],i)=>{
-  const t=Object.values(n).reduce((a,b)=>a+b,0),u=(n.US||0)/t;
-  if(u!==prev){rank=i+1;prev=u}
-  const pct=Math.round(u*100), keys=["CH","EU","US","OT"].filter(k=>n[k]);
-  const segs=keys.map(k=>`<i class="c-${k}" style="flex:${n[k]};animation-delay:${i*70}ms"></i>`).join("");
-  const aria=keys.map(k=>`${n[k]} ${L[k]}`).join(", ");
-  const chips=c.map(([k,s])=>`<span><i class="dot c-${k}"></i>${s}</span>`).join("");
-  return `<div class="row"><div class="rk">${rank}</div><div class="pn">${p}</div><div class="bar" role="img" aria-label="${p}: ${aria} von ${t} Diensten">${segs}</div><div class="pct ${pct>=50?"hi":""}">${pct}%</div><div class="chips">${chips}</div></div>`;
-}).join("");
-</script>
 </body>
 </html>
